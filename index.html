@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Références — Sami Ben Mansour</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<div class="selection-banner" id="selectionBanner">
+  <div class="wrap">
+    <span id="selectionCount">0 document sélectionné</span>
+    <div>
+      <button class="ghost" id="btnCopyLink">Copier le lien de sélection</button>
+      <button id="btnDownloadZip">Télécharger la sélection (.zip)</button>
+      <button class="ghost" id="btnClearSelection">Vider</button>
+    </div>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="wrap">
+    <span class="logo">Etik<span class="dot"></span></span>
+    <h1 class="title">Diplômes, certifications et attestations</h1>
+    <p class="lede">Références professionnelles de Sami Ben Mansour — Etik Conseil &amp; Formation. Filtrez par domaine, type de document ou secteur, puis téléchargez les pièces dont vous avez besoin.</p>
+  </div>
+</header>
+
+<div class="wrap controls">
+  <div class="search">
+    <input type="text" id="searchInput" placeholder="Rechercher un intitulé, un organisme, un client…">
+  </div>
+
+  <div class="facet-group">
+    <span class="facet-label">Type de document</span>
+    <div class="chips" id="chipsType"></div>
+  </div>
+
+  <div class="facet-group">
+    <span class="facet-label">Domaine</span>
+    <div class="chips" id="chipsTheme"></div>
+  </div>
+
+  <div class="facet-group">
+    <span class="facet-label">Secteur</span>
+    <div class="chips" id="chipsSecteur"></div>
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="count-row">
+    <span class="count" id="resultCount"></span>
+    <button class="reset" id="btnReset">Réinitialiser les filtres</button>
+  </div>
+
+  <table class="doclist" id="docTable">
+    <thead>
+      <tr>
+        <th></th>
+        <th>Document</th>
+        <th>Type</th>
+        <th>Année</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody id="docBody"></tbody>
+  </table>
+  <div class="empty-state" id="emptyState" style="display:none;">Aucun document ne correspond à ces critères.</div>
+</div>
+
+<footer>
+  <div class="wrap">
+    samibm@etik.com · samibenmansour.com
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
